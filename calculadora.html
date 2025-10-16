@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simple</title>
+    <script>
+        function calcular(operacion){
+            let a = document.querySelector("#vara").value;
+            let b = document.querySelector("#varb").value;
+
+            if(a === "" || b === ""){
+                alert("Ingresa ambos valores");
+                return;
+            }
+
+            a = parseFloat(a);
+            b = parseFloat(b);
+            let resultado = 0;
+
+            if(operacion === "suma"){
+                resultado = a + b;
+            } else if(operacion === "resta"){
+                resultado = a - b;
+            } else if(operacion === "multiplicacion"){
+                resultado = a * b;
+            } else if(operacion === "division"){
+                if(b === 0){
+                    alert("No se puede dividir entre 0");
+                    return;
+                }
+                resultado = a / b;
+            }
+
+            document.querySelector("#varc").value = resultado;
+        }
+    </script>
+</head>
+<body>
+    Ingrese A:
+    <input type="text" id="vara"><br><br>
+
+    Ingrese B:
+    <input type="text" id="varb"><br><br>
+
+    <button onclick="calcular('suma')">Sumar</button>
+    <button onclick="calcular('resta')">Restar</button>
+    <button onclick="calcular('multiplicacion')">Multiplicar</button>
+    <button onclick="calcular('division')">Dividir</button>
+    <br><br>
+
+    Resultado:
+    <input type="text" id="varc" readonly><br>
+</body>
+</html>
