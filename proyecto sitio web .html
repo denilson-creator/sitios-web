@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title> Mi Portafolio Web Interactivo Denilson</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Estilos generales */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f0f4f8, #d9e4f5);
+      color: #333;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 30px;
+      margin: 20px auto;
+      max-width: 900px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      color: #003366;
+    }
+
+    img.foto {
+      width: 180px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+    .proyecto img {
+      width: 100%;
+      max-width: 500px;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    form button {
+      background-color: #003366;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background-color: #0055aa;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Portafolio de Denilson</h1>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>Bienvenido a Mi Portafolio Web Interactivo</h2>
+    <img src="denilson.jpeg" alt="Foto de Denilson" class="foto">
+    <p>¡Hola! Soy Denilson, estudiante de Ingeniería de Sistemas en la Unsidad NAcional del Altiplano de Puno.</p>
+    <p><em>"Transformando ideas en código."</em></p>
+  </section>
+
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p><strong>Formación:</strong> Tercer semestre en UNAP</p>
+    <p><strong>Habilidades:</strong> C++, POO, HTML, CSS, JavaScript</p>
+    <p><strong>Intereses:</strong> Desarrollo web, programación interactiva, enseñanza, matemáticas</p>
+  </section>
+
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <div class="proyecto">
+      <h3>EJERCICIOS EN HTML</h3>
+      <p><a href="http://127.0.0.1:5503/PRACTICA1.html" target="_blank">practica1</a></p>
+      <h3>EJERCICOS EN CSS</h3>
+      <p><a href="http://127.0.0.1:5502/flex01.html" target="_blank">flex01</a></p>
+      <p><a href="http://127.0.0.1:5502/flex02.html" target="_blank">flex02</a></p>
+      <p><a href="http://127.0.0.1:5502/flex03.html" target="_blank">flex03</a></p>
+      <p><a href="http://127.0.0.1:5502/flex04.html" target="_blank">flex04</a></p>
+      <p><a href="http://127.0.0.1:5502/prac02.html" target="_blank">prac02</a></p>
+  
+      <p><a href="http://127.0.0.1:5502/prac03.html" target="_blank">prac03</a></p>
+      <p><a href="http://127.0.0.1:5502/pract01.html" target="_blank">pract01</a></p>
+      <p><a href="http://127.0.0.1:5502/pract04.html" target="_blank">pract04</a></p>
+      <h3>EJERCICIOS EN JavaScript</h3>
+      <p><a href="http://127.0.0.1:5501/JSprac01.html" target="_blank">parc01</a></p>
+      <p><a href="http://127.0.0.1:5501/JSprac02.html" target="_blank">prac02</a></p>
+      <p><a href="http://127.0.0.1:5501/JSprac03.html" target="_blank">prac03</a></p>
+      <p><a href="http://127.0.0.1:5501/JSprac04.html" target="_blank">prac04</a></p>
+      <p><a href="http://127.0.0.1:5501/JSprac05.html" target="_blank">prac05</a></p>
+      <p><a href="http://127.0.0.1:5501/boot01.html" target="_blank">boot01</a></p>
+      <p><a href="http://127.0.0.1:5501/boot2.html" target="_blank">boot02</a></p>
+      <p><a href="http://127.0.0.1:5501/boot3.html" target="_blank">boot03</a></p>
+      <p><a href="http://127.0.0.1:5501/boot4.html" target="_blank">boot04</a></p>
+    
+      <h3>Calculadora en HTML</h3>
+      <p>Aplicación de consola que realiza operaciones básicas.</p>
+      <img src="calcualdora.png" alt="Captura de Calculadora">
+      <p><a href="https://github.com/denilson-creator/sitios-web" target="_blank">Ver en GitHub</a></p>
+      
+    </div>
+    <div class="proyecto">
+      <h3>Mi primer sitio web</h3>
+      <p>Diseño responsivo con HTML y CSS.</p>
+      <img src="sitio Github.png" alt="Captura de sitio web">
+      <p><a href="https://github.com/denilson-creator/sitios-web" target="_blank">Ver en línea</a></p>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form onsubmit="enviarFormulario(event)">
+      <input type="text" id="nombre" placeholder="Tu nombre" required>
+      <input type="email" id="email" placeholder="Tu correo" required>
+      <textarea id="mensaje" placeholder="Tu mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p>Redes sociales:</p>
+    <ul>
+      <li><a href="https://github.com/denilson-creator/sitios-web" target="_blank">GitHub</a></li>
+      <li><a href="https://linkedin.com/in/denilson" target="_blank">LinkedIn</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Denilson. Todos los derechos reservados.</p>
+  </footer>
+
+  <script>
+    function enviarFormulario(event) {
+      event.preventDefault();
+      const nombre = document.getElementById('nombre').value;
+      alert(`Gracias por tu mensaje, ${nombre}. ¡Te responderé pronto!`);
+    }
+  </script>
+
+</body>
+</html>
